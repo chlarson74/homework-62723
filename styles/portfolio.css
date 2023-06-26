@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 /* created a flex container for the header, main and footer elements */
@@ -93,7 +93,19 @@ article {
 }
 .ai {
     background-image: url(../images/ai-services.jpg);
+    background-color: lightgray;
+    background-blend-mode: multiply;
+}
+.ai p {
+    color:black;
+    text-shadow: 0px 0px 10px white;
 }
 .time {
     background-image: url(../images/time-stream.jpg);
+}
+@media screen and (max-width: 600px) {
+    aside {
+        background-color: lightgray;
+    }
+
 }
