@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+  
+/* Applying all of the same 
+functionalities to the body */
+body{
+    background-color: white;
+}
+
+header,
+main,
+footer {
+    display: flex;
+    width: 85%;
+    margin:20px  auto;
+    justify-content: space-between;
+}
+
+nav {
+    display:flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+nav a {
+    border-left: solid black 1px;
+    justify-content: center;
+    align-content:center;
+    padding-left:15px;
+    text-decoration: none;
+    color:black;
+    width: 100%;
+    /*width: 400px;*/
+}
+nav a:hover {
+    background-color:lightgray;
+}
+aside {
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+}
+article {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Changing the image to gray color */
+.project {
+    filter: grayscale(100%);
+    background-size: contain;
+    width: 300px;
+    height: 225px;
+    flex: 0 0 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:white solid 2px;
+}
+  
+.project:hover {
+    filter:none;
+}
+
+.project p {
+    color:white;
+    text-shadow: 0px 0px 10px black;
+    font-size:20px;
+}
+/* individual projects for background images */
+.seo {
+    background-image: url(../images/seo-services.jpg);
+}
+.pike-place {
+    background-image: url(../images/pike-place.jpg);
+}
+.pike-street {
+    background-image: url(../images/pike-street.jpg);
+}
+.smith-tower {
+    background-image: url(../images/smith-tower.jpg);
+}
+.space-needle {
+    background-image: url(../images/space-needle.jpg);
+}
+.seat {
+    background-image: url(../images/seat-services.jpg);
+}
+.flag {
+    background-image: url(../images/red-flags.jpg);
+}
+.ai {
+    background-image: url(../images/ai-services.jpg);
+}
+.time {
+    background-image: url(../images/time-stream.jpg);
+}
