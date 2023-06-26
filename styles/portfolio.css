@@ -50,14 +50,14 @@ article {
 /* filter property changes the image to a grayscale. creates a flex container for the paragraph tag to justify and align center. */
 .project {
     filter: grayscale(100%);
-    background-size: contain;
+    background-size: cover;
     width: 300px;
     height: 225px;
     flex: 0 0 400;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:white solid 2px;
+    border:black solid 2px;
 }
  /* this psuedo-class will remove the greyscale filter on hover */ 
 .project:hover {
