@@ -1,16 +1,16 @@
+/* zeroed out margin and padding. created a universal box-sizing. established the universal font-family - per Google Fonts */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
 }
-  
-/* Applying all of the same 
-functionalities to the body */
+
 body{
     background-color: white;
 }
 
+/* created a flex container for the header, main and footer elements */
 header,
 main,
 footer {
@@ -19,7 +19,7 @@ footer {
     margin:20px  auto;
     justify-content: space-between;
 }
-
+/* created even spacing in the header and footer navs */
 nav {
     display:flex;
     justify-content: space-evenly;
@@ -40,15 +40,14 @@ nav a:hover {
 }
 aside {
     width: 20%;
-    text-align: right;
-    padding-right: 15px;
 }
+/* creates a flex-wrap for the project images */
 article {
     width:80%;
     display: flex;
     flex-wrap: wrap;
 }
-/* Changing the image to gray color */
+/* filter property changes the image to a grayscale. creates a flex container for the paragraph tag to justify and align center. */
 .project {
     filter: grayscale(100%);
     background-size: contain;
@@ -60,7 +59,7 @@ article {
     align-items: center;
     border:white solid 2px;
 }
-  
+ /* this psuedo-class will remove the greyscale filter on hover */ 
 .project:hover {
     filter:none;
 }
@@ -70,7 +69,7 @@ article {
     text-shadow: 0px 0px 10px black;
     font-size:20px;
 }
-/* individual projects for background images */
+/* individual project classes for background images */
 .seo {
     background-image: url(../images/seo-services.jpg);
 }
