@@ -1,5 +1,5 @@
 /* zeroed out margin and padding. created a universal box-sizing. established the universal font-family - per Google Fonts */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -81,6 +81,26 @@ article {
     padding: 100px 200px;
     text-decoration: none;;
 }
+
+.faze {
+    width:80%;
+    height: auto;
+    filter: grayscale(100%);
+    transition:1s;
+    box-shadow: 2px 2px 10px black;
+}
+.faze:hover {
+    filter:none; 
+}
+
+aside p {
+    margin:20px 20px 20px 0;
+}
+aside a {
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
 /* individual project classes for background images */
 .seo {
     background-image: url(../images/seo-services.jpg);
@@ -133,19 +153,33 @@ article {
     .project a {
         padding: 100px 100px;
     }
+    main {
+        width: 95%;        
+    }
+    aside {
+        width: 30%;
+    }
+    /* creates a flex-wrap for the project images */
+    article {
+        width:70%;
+    }
 
 }
 /* small screens */
 @media screen and (max-width: 600px) {
     main {
-        display: block;        
+        display: block;      
     }
+    
     article,
     aside {
         width: 100%;
     }
     footer h2 {
         display: none;
+    }
+    .faze {
+        width:30%;
     }
 
 }
