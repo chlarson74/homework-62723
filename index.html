@@ -15,7 +15,8 @@
     <header>
         <h1>chris larson</h1>
         <nav>
-            <a href="#"><p>work</p></a>
+            <a href="#work"><p>work</p></a>
+            <!-- a cv will be added as a web page when I have time to code one -->
             <a href="#"><p>cv</p></a>
             <a href="#contact"><p>contact</p></a>
         </nav>
@@ -25,40 +26,40 @@
         <aside>
             <img class="faze" src="./images/profile-pic.jpg" alt="chris larson - web developer" />
             <p>web development<br>&amp; seo marketing<br>full design services<br></p>
-        <p>chris larson is a web developer with 10 years experience driving results for over 350 happy clients. the focus of his work is creating search engine optimized websites for small and medium sized business. he earned a bfa with honors from cornish college of the arts and has developed projects for both print and digital designs. chris is also a full-time faculty instructor at <a href="https://www.everettcc.edu/" target="_blank">everett community college</a> and the director of the <a href="https://www.google.com/maps/uv?pb=!1s0x549aaacd4f27e023%3A0x98c7b2b7c6a4182d!5sRussell%20Day%20Gallery!15sCgIgARICEAE" target="_blank">russell day gallery.</a></p>
+        <p>chris larson is a web developer with 10 years experience driving results for over 350 happy clients. the focus of his work is creating search engine optimized websites for small and medium sized business. he earned a bfa with honors from cornish college of the arts and has developed designs for both print and digital projects. chris is also a full-time faculty instructor at <a href="https://www.everettcc.edu/" target="_blank">everett community college</a> and the director of the <a href="https://www.google.com/maps/uv?pb=!1s0x549aaacd4f27e023%3A0x98c7b2b7c6a4182d!5sRussell%20Day%20Gallery!15sCgIgARICEAE" target="_blank">russell day gallery.</a></p>
         </aside>
         <!-- placed all the projects inside an article with 80% width -->
-        <article>
-            
-                <section class="project seo">
+        <article id="work">
+                <!-- used project id instead of class for each individual project -->
+                <section class="project" id="seo">
                     <a href="https://chlarson74.github.io/refactor-homework/" target="_blank"><p>seo services</p> </a>
                 </section>
            
-                <section class="project pike-place">
+                <section class="project pike-place" id="pike-place">
                     <p>pike place market grill</p>
                 </section>
-                <section class="project pike-street">
+                <section class="project" id="pike-street">
                     <p>pike street services</p>
                 </section>
-                <section class="project smith-tower">
+                <section class="project" id="smith-tower">
                     <p>smith tower technologies</p>
                 </section>
-                <section class="project space-needle">
+                <section class="project" id="space-needle">
                     <p>space needle engineering</p>
                 </section>
-                <section class="project seat">
+                <section class="project" id="seat">
                     <p><i>have a seat</i> - app</p>
                 </section>
-                <section class="project flag">
+                <section class="project" id="flag">
                     <p>red flag photography</p>
                 </section>
-                <section class="project augmented">
+                <section class="project" id="augmented">
                     <p>augmented reality</p>
                 </section>
-                <section class="project time">
+                <section class="project" id="time">
                     <p>time stream services</p>
                 </section>
-                <section class="project ai">
+                <section class="project" id="ai">
                     <p>artificial intelligence</p>
                 </section>
         </article>
@@ -66,6 +67,7 @@
     <footer id="contact">
         <h2>make it happen</h2>
         <nav>
+            <!-- fake email address and phone number until I can find an alias service to protect those assets -->
             <a href="mailto:emailaddress@contact.info"><p>email me</p></a>
             <a href="tel:5551234567"><p>call me: 5551234567</p></a>
             <a href="#"><p>&copy; 2023 - Chris Larson</p></a>
