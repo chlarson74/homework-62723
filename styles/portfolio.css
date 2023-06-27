@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
+    scroll-behavior: smooth; /* learned about slow scroll behavior from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp */
 }
 
 body{
@@ -51,13 +52,19 @@ article {
 .project {
     filter: grayscale(100%);
     background-size: cover;
-    width: 300px;
-    height: 225px;
+    min-width: 300px;
+    min-height: 300px;
+    width:33.3%;
     flex: 0 0 400;
     display: flex;
     justify-content: center;
     align-items: center;
     border:black solid 2px;
+    transition: 1s;
+}
+.project:first-child {
+    width:99.9%;
+    background-position: center;
 }
  /* this psuedo-class will remove the greyscale filter on hover */ 
 .project:hover {
@@ -66,12 +73,20 @@ article {
 
 .project p {
     color:white;
-    text-shadow: 0px 0px 10px black;
-    font-size:20px;
+    text-shadow: 8px 8px 20px black;
+    font-size:25px;
+}
+
+.project a {
+    padding: 100px 200px;
+    text-decoration: none;;
 }
 /* individual project classes for background images */
 .seo {
     background-image: url(../images/seo-services.jpg);
+}
+.augmented {
+    background-image: url(../images/augmented.jpg);
 }
 .pike-place {
     background-image: url(../images/pike-place.jpg);
@@ -103,9 +118,34 @@ article {
 .time {
     background-image: url(../images/time-stream.jpg);
 }
+/* large screens */
+@media screen and (max-width: 1324px) {
+    .project {
+        width:50%;
+    }
+
+}
+/* medium screens */
+@media screen and (max-width: 883px) {
+    .project {
+        width:1000%;
+    }
+    .project a {
+        padding: 100px 100px;
+    }
+
+}
+/* small screens */
 @media screen and (max-width: 600px) {
+    main {
+        display: block;        
+    }
+    article,
     aside {
-        background-color: lightgray;
+        width: 100%;
+    }
+    footer h2 {
+        display: none;
     }
 
 }
