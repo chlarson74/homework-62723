@@ -103,6 +103,10 @@ article {
 }
 
 /* individual project classes for background images */
+#bb-quote {
+    background-image: url(../images/nm-1.jpg);
+}
+
 #seo {
     background-image: url(../images/seo-services.jpg);
 }
