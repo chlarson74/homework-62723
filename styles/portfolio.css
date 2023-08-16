@@ -103,6 +103,10 @@ article {
 }
 
 /* individual project classes for background images */
+#surf-report {
+    background-image: url(../images/surfing-7.jpg);
+}
+
 #bb-quote {
     background-image: url(../images/nm-1.jpg);
 }
