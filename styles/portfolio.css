@@ -103,6 +103,10 @@ article {
 }
 
 /* individual project classes for background images */
+#haiku {
+    background-image: url(../images/haiku.jpg);
+}
+
 #surf-report {
     background-image: url(../images/surfing-7.jpg);
 }
